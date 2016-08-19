@@ -1,0 +1,83 @@
+<html>
+    <head>
+    <title> Project 4</title>
+    </head>
+    <link rel="stylesheet" href='/node-modules/bootstrap/dist/css/bootstrap.css'>
+    <body>
+        <form name='form' method="post"> 
+        
+    <table border=2 class='table table-hover table-striped'>
+        <thead>
+            <th>LABEL</th>
+            <th>FORM ELEMENTS</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USERNAME </td>
+                <td> <input type='text'
+                            name='Uname' 
+                            id='Uname'
+                            placeholder='Enter Username' 
+                            value='sample'/> </td>
+            </tr>
+            <tr>
+                <td>PASSWORD </td>
+                <td> <input type='password'
+                            name='password' 
+                            id='password'
+                            placeholder='Enter Password'/></td>
+            </tr>
+            <tr>
+            <td> GENDER</td>
+            <td> <input type='radio'
+                        name="gender"
+                        value='male'
+                        >Male 
+            
+             <input type='radio'
+                        name="gender"
+                        value='female'
+                    >Female 
+            
+           
+           <input type='radio'
+                        name="gender"
+                        value='other'
+                        > other</td>
+            
+            </tr>
+            <tr>
+                <td>CARS </td>
+                <td>
+                <input type='checkbox'
+                        name="toyota"
+                        value='1'
+                        >Toyota
+                    <input type='checkbox'
+                        name="honda"
+                        value='1'
+                        >honda
+                    <input type='checkbox'
+                        name="BMW"
+                        value='1'
+                        >BMW
+                    <input type='checkbox'
+                        name="jaguar"
+                        value='1'
+                        >Jaguar
+                </td>
+            </tr>
+            <td>COUNTRIES</td>
+           <td> <select name="Countries">
+           <option value='NPL'>Nepal</option>
+            <option value="US">USA</option>
+            <option value=U>UK</option>
+                 <option values="1">Select a country</option>
+                
+                </select> </td>
+        </tbody>
+    </table>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
