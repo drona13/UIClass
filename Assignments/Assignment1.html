@@ -1,0 +1,77 @@
+<html>
+    <head>
+    <title> Project 4</title>
+    </head>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <body>
+        <form name='form' method="post"> 
+        
+    <table border=2 class='table table-hover table-striped'>
+        <tbody>
+            <tr>
+                <td>First Name </td>
+                <td> <input type='text'
+                            name='Uname' 
+                            id='Uname'
+                            placeholder='Enter First Name' 
+                            /> </td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+                <td> <input type='text'
+                            name='Last Name' 
+                            id='Last Name'
+                            placeholder='Enter Last Name'/></td>
+            </tr>
+            <tr>
+               <td> Gender</td>
+                <td> <input type='radio'
+                            name="gender"
+                            value='male'
+                            >Male 
+                     <input type='radio'
+                            name="gender"
+                            value='female'
+                            >Female 
+                     <input type='radio'
+                            name="gender"
+                            value='other'
+                            > other</td>
+            </tr>
+             <tr>
+            <td>Countries</td>
+           <td> <select name="Countries">
+           <option value='NPL'>Nepal</option>
+            <option value="US">USA</option>
+            <option value=U>UK</option>
+                 <option values="1">Select a country</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Classes Taken </td>
+                <td>
+                    <input type='checkbox'
+                           name="Java"
+                           value='1'
+                           >JAVA<br>
+                    <input type='checkbox'
+                           name="UI"
+                           value='1'
+                           >UI<br>
+                    <input type='checkbox'
+                           name="C#"
+                           value='1'
+                           >C#<br>
+                    <input type='checkbox'
+                           name="VM Ware"
+                           value='1'
+                           >VM Ware
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
