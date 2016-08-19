@@ -2,17 +2,14 @@
     <head>
     <title> Project 4</title>
     </head>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <body>
-        <form name='form' method="post"> 
-        
-    <table border=2 class='table table-hover table-striped'>
+    <table border=2 >
         <tbody>
             <tr>
                 <td>First Name </td>
                 <td> <input type='text'
-                            name='Uname' 
-                            id='Uname'
+                            name='First Name' 
+                            id='First Name'
                             placeholder='Enter First Name' 
                             /> </td>
             </tr>
@@ -40,12 +37,14 @@
             </tr>
              <tr>
             <td>Countries</td>
-           <td> <select name="Countries">
-           <option value='NPL'>Nepal</option>
+            <td>
+            <select name="Countries">
+            <option values="null">Select a country</option>
+            <option value='NPL'>Nepal</option>
             <option value="US">USA</option>
             <option value=U>UK</option>
-                 <option values="1">Select a country</option>
-                </select> </td>
+            </select>
+            </td>
             </tr>
             <tr>
                 <td>Classes Taken </td>
@@ -71,7 +70,5 @@
             
         </tbody>
     </table>
-        <input type="submit" value="submit">
-        </form>
     </body>
 </html>
