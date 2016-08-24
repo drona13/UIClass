@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="/project6/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form name='form1' method="get"> 
+<table border =2 class="table table-hover table-striped">
+        <tbody>
+            <button class='btn btn-primary'>test</button>
+            <tr>
+                <td>First Name </td>
+                <td> <input type='text'
+                            name='First Name' 
+                            id='First Name'
+                            placeholder='Enter First Name' 
+                            /> </td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+                <td> <input type='text'
+                            name='Last Name' 
+                            id='Last Name'
+                            placeholder='Enter Last Name'/></td>
+            </tr>
+            <tr>
+               <td> Gender</td>
+                <td> <input type='radio'
+                            name="gender"
+                            value='male'
+                            >Male 
+                     <input type='radio'
+                            name="gender"
+                            value='female'
+                            >Female 
+                     <input type='radio'
+                            name="gender"
+                            value='other'
+                            > other</td>
+            </tr>
+             <tr>
+            <td>Countries</td>
+            <td>
+            <select name="Countries">
+            <option values="null">Select a country</option>
+            <option value='NPL'>Nepal</option>
+            <option value="US">USA</option>
+            <option value=U>UK</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Classes Taken </td>
+                <td>
+                    <input type='checkbox'
+                           name="Java"
+                           value='1'
+                           >JAVA<br>
+                    <input type='checkbox'
+                           name="UI"
+                           value='1'
+                           >UI<br>
+                    <input type='checkbox'
+                           name="C#"
+                           value='1'
+                           >C#<br>
+                    <input type='checkbox'
+                           name="VM Ware"
+                           value='1'
+                           >VM Ware
+                </td>
+            </tr>
+            
+        </tbody>
+        </table>
+             <input type="submit" value="submit">
+        </form>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+ <script type="text/javascript" src="/project6/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/project6/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
