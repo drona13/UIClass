@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Assignment</title>
+    </head>
+    <link rel="stylesheet" href='/assignment_javascript/node_modules/bootstrap/dist/css/bootstrap.css'>
+    <body>
+        <form name='form' method="get"> 
+        
+    <table class='table table-hover table-striped'>
+        
+        <tbody>
+             <tbody>
+                 <td>Name</td>
+            <tr>
+                <td>Fname</td>
+            <td> <input type='text'
+                            name='fname' 
+                            id='fname'
+                            placeholder='Enter Firstname' 
+                            /> </td>
+           
+                <td>Lname</td>
+            <td> <input type='text'
+                            name='lname' 
+                            id='lname'
+                            placeholder='Enter Lastname' 
+                            /> </td>
+            </tr>
+            
+            <tr>
+           <td>gender</td>
+            <td> <input type='radio'
+                        name="gender"
+                        value='male'
+                        >male
+            
+             <input type='radio'
+                        name="gender"
+                        value='female'
+                    >Female 
+            
+           
+           <input type='radio'
+                        name="gender"
+                        value='other'
+                        > other</td>
+            
+            </tr>
+            <tr>
+                <td>address</td>
+                <td> <input type='text'
+                            name='address' 
+                            id='address'
+                            placeholder='Enter Address' 
+                            /> </td>
+             </tr>
+       <tr>
+           <td>city</td>
+           <td> <select name="Cities">
+               <option values="Cities">Select a city</option>
+           <option>Texas</option>
+            <option value="BN">Boston</option>
+            <option value="SVL">Somerville</option>
+                 
+                
+                </select> </td>
+           </tr>
+                 
+          <tr>
+              <td>Countries</td>
+           <td> <select name="Countries">
+                <option values="countries">Select a country</option>
+           <option>Nepal</option>
+            <option value="US">USA</option>
+            <option value="Uk">UK</option>
+                
+                
+                </select> </td>
+                  </tr>
+            <tr>
+                <td> PhoneNo</td>
+            <td> <input type='text'
+                            name='phone' 
+                            id='phone'
+                            placeholder='EnterPhone'
+                            /> </td>
+            </tr>
+            
+        </tbody>
+    </table>
+             </form>
+            <button id="button"  onclick = "addperson(event)">Submit</button>
+      
+        <button id="button" onclick = "traverseArray(event)">Display</button>
+        <button id="btn1">button1</button>
+        <div id="display"></div>
+        <hr>
+        <div id='first'> First Contents</div>
+        <div id='second'>Second Contents</div>
+        <hr>
+        <button id='frstbtn'>display first</button>
+        <button id='scndbtn'>display second</button>
+        <button id='thrdbtn'> display all</button>
+<script type="text/javascript" src="/assignment_javascript/node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/assignment_javascript/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/assignment_javascript/js/person.js"></script>
+
+</body>
+</html>
