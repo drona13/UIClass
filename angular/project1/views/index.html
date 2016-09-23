@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flex-container{
+            display:flex;
+            flex-direction:column;
+           
+        }
+        .flex-item{
+            background: blue;
+            color:white;
+            cursor:pointer;
+        }
+        .flex-item:hover{ <!--pseudo-class-->
+            background: red;
+            color:black;
+        }
+        
+        </style>
+ <title> angular project1</title>   
+</head>
+<body ng-app='app'>
+   <div ng-controller='AppCtrl'>
+   <!--  <input type='text' ng-model='person.name' id='name'>
+    {{person.name}}<br>
+   {{::person.name}} -->
+       <div app-title></div>
+    <div class='app-title'></div>
+    <app-title></app-title>
+       <nav-bar></nav-bar>
+      
+    </div> 
+   
+    
+    
+    
+     
+    <script type='text/javascript' src='/node_modules/angular/angular.js'></script> 
+    <script type='text/javascript' src='/js/project1.js'></script>
+    <script type='text/javascript' src='/js/controllers/AppCtrl.js'></script>
+    <script type='text/javascript' src='/js/directives/title.js'></script>
+    <script type='text/javascript' src='/js/directives/nav-bar.js'></script>
+    <script type="text/javascript" src="/js/services/itemType.js"></script>
+    
+   
+   
+</body>
+
+</html>

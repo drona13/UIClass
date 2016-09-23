@@ -1,0 +1,1 @@
+angular.module('app',[]);//initialises the angular application
