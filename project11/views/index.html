@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        nav li{
+            list-style:none;
+        }
+        ul{
+            display:flex;
+            flex-direction:row;
+        }
+        li{
+            flex-flow: wrap;
+        }
+    
+    </style>
+   <title>sample with ng-view</title> 
+    </head>
+<body ng-app="sampleView">
+    <h1>sample with ng-view</h1>
+    <nav>
+    <ul>
+        <li><a href="#!/home">Home </a></li>
+         <li><a href="#!/error">Error </a></li>
+    
+    
+    </ul>
+        </nav>
+    
+  
+    <div ng-view></div>
+    
+   <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="/js/sampleView.js"></script>
+    <script type="text/javascript" src="/js/controllers/sampleViewCtrl.js"></script>
+    <script type="text/javascript" src="/js/controllers/homeCtrl.js"></script>
+    
+</body>
+
+</html>

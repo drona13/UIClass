@@ -80,4 +80,26 @@ function traverseArray(e) {
      });
 
 });
+$("frthbtn").click(function(){
+    $("#firstname").addClass("error");
+  
+});
+$("fthbtn").click(function(){
+    $("#lastname").removeClass("error");
+});
+  $('#firstname')val(drona);
+var firstname=$('fname').val();
+var lastname=$('lname').val();
+var address=$('address').val();
+var phone=$('phone').val();
+if(firstname.length===0){
+    $('#firstname').addClass('error');
+    $('#fnameerr').html("first name can't be empty");
+    $('#firstname').addClass('error').addClass('error');
+}
+else{
+    $("#firstname").removeClass('error');
+    $('#fnameerr').html("");
+}
+
 

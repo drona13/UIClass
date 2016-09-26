@@ -4,6 +4,8 @@
     <title>Assignment</title>
     </head>
     <link rel="stylesheet" href='/assignment_javascript/node_modules/bootstrap/dist/css/bootstrap.css'>
+    <link rel="stylesheet" href="/assignment_javascript/css/style.css">
+    <link rel="stylesheet" href="/assignment_javascript/css/label.css">
     <body>
         <form name='form' method="get"> 
         
@@ -11,25 +13,36 @@
         
         <tbody>
              <tbody>
-                 <td>Name</td>
+                 <td>
+                     <label>Name</label>
+                 </td>
             <tr>
-                <td>Fname</td>
+                <td>
+                 <label id='firstname'> Fname</label>  
+                </td>
             <td> <input type='text'
                             name='fname' 
                             id='fname'
                             placeholder='Enter Firstname' 
-                            /> </td>
+                            /> 
+                <span id="fnameErr"></span>
+                </td>
            
-                <td>Lname</td>
+                <td>
+                    <label id="lastname">Lname</label>
+                </td>
             <td> <input type='text'
                             name='lname' 
                             id='lname'
                             placeholder='Enter Lastname' 
-                            /> </td>
+                            />   <span id="lnameErr"></span></td>
             </tr>
             
+                
             <tr>
-           <td>gender</td>
+           <td>
+              <label id="gender">gender</label> 
+                </td>
             <td> <input type='radio'
                         name="gender"
                         value='male'
@@ -44,19 +57,23 @@
            <input type='radio'
                         name="gender"
                         value='other'
-                        > other</td>
+                        > other   <span id="gendererr"></span></td>
             
             </tr>
             <tr>
-                <td>address</td>
+                <td>
+                    <label id='address'>address</label>
+                </td>
                 <td> <input type='text'
                             name='address' 
                             id='address'
                             placeholder='Enter Address' 
-                            /> </td>
+                            />   <span id="addressErr"></span></td>
              </tr>
        <tr>
-           <td>city</td>
+           <td>
+              <label id="cities">city</label> 
+           </td>
            <td> <select name="Cities">
                <option values="Cities">Select a city</option>
            <option>Texas</option>
@@ -64,11 +81,13 @@
             <option value="SVL">Somerville</option>
                  
                 
-                </select> </td>
+                </select>   <span id="cityErr"></span></td>
            </tr>
                  
           <tr>
-              <td>Countries</td>
+              <td>
+                  <label id="countries">Countries</label>
+              </td>
            <td> <select name="Countries">
                 <option values="countries">Select a country</option>
            <option>Nepal</option>
@@ -76,21 +95,23 @@
             <option value="Uk">UK</option>
                 
                 
-                </select> </td>
+                </select>  <span id="countriesErr"></span> </td>
                   </tr>
             <tr>
-                <td> PhoneNo</td>
+                <td>
+                  <label id="phoneno">PhoneNo</label>  
+                </td>
             <td> <input type='text'
                             name='phone' 
                             id='phone'
                             placeholder='EnterPhone'
-                            /> </td>
+                            />   <span id="phonenoErr"></span></td>
             </tr>
             
         </tbody>
     </table>
              </form>
-            <button id="button"  onclick = "addperson(event)">Submit</button>
+            <button id="button"  onclick = "addPerson(event)">Submit</button>
       
         <button id="button" onclick = "traverseArray(event)">Display</button>
         <button id="btn1">button1</button>
@@ -102,6 +123,8 @@
         <button id='frstbtn'>display first</button>
         <button id='scndbtn'>display second</button>
         <button id='thrdbtn'> display all</button>
+        <button id="frthbtn">add Class</button>
+        <button id="fthbtn">remove Class</button>
 <script type="text/javascript" src="/assignment_javascript/node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="/assignment_javascript/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="/assignment_javascript/js/person.js"></script>

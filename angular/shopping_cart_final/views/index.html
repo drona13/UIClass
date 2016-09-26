@@ -1,34 +1,37 @@
 <!DOCtype html>
-<html ng-app="shoppingCart">
-<head>
-    
-    </head>
+<html ng-app='shoppingCart'>
+    <title>The Shopping Cart</title>
     <body>
-        <p> This is HOME PAGE! </p>
-        
-        <div class="container-fluid" ng-controller="HomeCtrl">
-        
-        <div left-nav> </div>
-            <left-nav></left-nav>
-        
-        </div>
-    
-    
-    
-    
-    
-    
-    
-    
+        <div id='container' ng-controller = "AppCtrl">
+            
+            
+            <div left-nav></div>
+                        
+            <div product-list></div>
+            
+            
+                    
+                                         
+                </div>
+            
+            
+           
     
     
     
     <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="/node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="/js/shoppingCart.js"></script>
-    <script type="text/javascript" src="/js/controllers/HomeCtrl.js"></script>
+    <script type="text/javascript" src="/js/controllers/AppCtrl.js"></script>
+    
     <script type="text/javascript" src="/js/services/productTypeService.js"></script>
-    <script type="text/javascript" src="/js/directives/leftNav.js"></script>    
+    <script type="text/javascript" src="/js/services/productServices.js"></script>
+    <script type="text/javascript" src="/js/directives/leftNav.js"></script> 
+    <script type="text/javascript" src="/js/directives/title.js"></script>
+     
+        
+         
+
     </body>
     
     
